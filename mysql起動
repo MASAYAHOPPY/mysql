@@ -9,6 +9,7 @@ mysql --local-infile=1 -u root -p
 use cod;
 show databases;
 show tables;
+SHOW COLUMNS FROM data FROM cod;
 SOURCE C:/Users/otyaz/mysql/hoppy.sql;
 ALTER TABLE data DISABLE KEYS;
 LOAD DATA LOCAL INFILE 'C:/Users/otyaz/mysql/data.txt' INTO TABLE data CHARACTER SET utf8 FIELDS TERMINATED BY '\t';
