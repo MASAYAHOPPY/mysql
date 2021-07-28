@@ -14,8 +14,13 @@ SOURCE C:/Users/otyaz/mysql/hoppy.sql;
 ALTER TABLE data DISABLE KEYS;
 LOAD DATA LOCAL INFILE 'C:/Users/otyaz/mysql/data.txt' INTO TABLE data CHARACTER SET utf8 FIELDS TERMINATED BY '\t';
 ALTER TABLE data ENABLE KEYS;
-SELECT * FROM hoppy
-
+＃ここからデータ処理
+＃データを見る
+＃データを消す
+SHOW COLUMNS FROM data FROM cod;
+select z from data;
+alter table data drop column date
+ALTER TABLE table_name DROP column1, DROP column2, ;
 
 
 ＃SOURCE C:/Users/otyaz/mysql/data.sql;
