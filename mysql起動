@@ -7,9 +7,9 @@ create database cod default character set utf8;
 ＃よくつかう
 mysql --local-infile=1 -u root -p
 ＃以下mysql内
-use cod;
 show databases;
 show tables;
+use cod;
 SHOW COLUMNS FROM data FROM cod;
 SOURCE C:/Users/otyaz/mysql/hoppy.sql;
 ALTER TABLE data DISABLE KEYS;
