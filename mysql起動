@@ -6,6 +6,7 @@ exit
 create database cod default character set utf8;
 ＃よくつかう
 mysql --local-infile=1 -u root -p
+＃以下mysql内
 use cod;
 show databases;
 show tables;
