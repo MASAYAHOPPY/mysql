@@ -11,18 +11,19 @@ show databases;
 use cod;
 show tables;
 SHOW COLUMNS FROM data FROM cod;
-＃以下初期設定
+＃以下sql+txtでデータベース作製（mysql上）
 SOURCE C:/Users/otyaz/mysql/data.sql;
 ALTER TABLE data DISABLE KEYS;
 LOAD DATA LOCAL INFILE 'C:/Users/otyaz/mysql/data.txt' INTO TABLE data CHARACTER SET utf8 FIELDS TERMINATED BY '\t';
 ALTER TABLE data ENABLE KEYS;
-＃ここからデータ処理
+
 ＃データを見る
-＃データを消す
 SHOW COLUMNS FROM data FROM cod;
 select z from data;
+＃データを消す
 alter table data drop column date
 ALTER TABLE table_name DROP column1, DROP column2, ;
 
+＃excelで見るときはodbcを使いexcelで開くと楽
 
-＃SOURCE C:/Users/otyaz/mysql/data.sql;
+
