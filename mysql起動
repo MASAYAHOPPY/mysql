@@ -12,7 +12,7 @@ use cod;
 show tables;
 SHOW COLUMNS FROM data FROM cod;
 ＃以下初期設定
-SOURCE C:/Users/otyaz/mysql/hoppy.sql;
+SOURCE C:/Users/otyaz/mysql/data.sql;
 ALTER TABLE data DISABLE KEYS;
 LOAD DATA LOCAL INFILE 'C:/Users/otyaz/mysql/data.txt' INTO TABLE data CHARACTER SET utf8 FIELDS TERMINATED BY '\t';
 ALTER TABLE data ENABLE KEYS;
