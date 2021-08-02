@@ -24,6 +24,8 @@ select z from data;
 ＃データを消す
 alter table data drop column date
 ALTER TABLE table_name DROP column1, DROP column2, ;
+＃データ結合（内部結合；重複するデータだけ取り出す）
+SELECT a,b,c,vol,Z,file FROM data INNER JOIN smiles ON file = cod_id;
 
 ＃excelで見るときはodbcを使いexcelで開くと楽
 
