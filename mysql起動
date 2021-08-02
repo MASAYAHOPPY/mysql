@@ -12,6 +12,7 @@ use cod;
 show tables;
 SHOW COLUMNS FROM data FROM cod;
 ＃以下sql+txtでデータベース作製（mysql上）
+SET GLOBAL local_infile=on; 
 SOURCE C:/Users/otyaz/mysql/data.sql;
 ALTER TABLE data DISABLE KEYS;
 LOAD DATA LOCAL INFILE 'C:/Users/otyaz/mysql/data.txt' INTO TABLE data CHARACTER SET utf8 FIELDS TERMINATED BY '\t';
